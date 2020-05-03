@@ -3,8 +3,8 @@ package caldav
 import (
 	"net/http"
 
-	"github.com/samedi/caldav-go/data"
-	"github.com/samedi/caldav-go/handlers"
+	"github.com/dmolik/caldav-go/data"
+	"github.com/dmolik/caldav-go/handlers"
 )
 
 // RequestHandler handles the given CALDAV request and writes the reponse righ away. This function is to be

@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"github.com/samedi/caldav-go/errs"
+	"github.com/dmolik/caldav-go/errs"
 	"io"
 	"net/http"
 )

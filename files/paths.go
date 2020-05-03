@@ -1,7 +1,7 @@
 package files
 
 import (
-	"github.com/samedi/caldav-go/lib"
+	"github.com/dmolik/caldav-go/lib"
 	"path/filepath"
 	"strings"
 )

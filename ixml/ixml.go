@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/samedi/caldav-go/lib"
+	"github.com/dmolik/caldav-go/lib"
 )
 
 const (
