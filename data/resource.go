@@ -169,6 +169,15 @@ func (r *Resource) GetPropertyValue(propPath ...string) string {
 	return prop
 }
 
+func (r *Resource) GetPropertyValues(propPath ...string) []string {
+	if propPath[0] == ical.VCALENDAR {
+		propPath = propPath[1:]
+	}
+
+	props, _ := r.icalendar().DigProperties(propPath...)
+	return props
+}
+
 // HasPropertyParam tells whether the resource has the provided property param in its iCal content.
 // The path to the param should be provided in case of nested params.
 // Example, suppose the resource has this content:
