@@ -1,8 +1,0 @@
-package: github.com/dmolik/caldav-go
-import:
-- package: github.com/beevik/etree
-- package: github.com/dmolik/ical-go
-- package: github.com/yosssi/gohtml
-- package: golang.org/x/net
-  subpackages:
-  - html
