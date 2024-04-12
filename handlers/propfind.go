@@ -10,7 +10,7 @@ type propfindHandler struct {
 
 func (ph propfindHandler) Handle() *Response {
 	// get the target resources based on the request URL
-	resources, err := ph.storage.GetResources(ph.requestPath, ph.headers.IsDeep())
+	resources, err := ph.storage.GetResources(ph.requestPath, true) // ph.headers.IsDeep())
 	if err != nil {
 		return ph.response.SetError(err)
 	}
